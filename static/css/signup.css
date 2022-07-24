@@ -3,11 +3,12 @@
     margin: 0;
 }
 
-body{
+.box{
     display: flex;
-    margin-top: 100px;
     justify-content: center;
+    align-items: center;
     background-color: #4f868c;
+    min-height: 100vh;
 }
 
 .container{
@@ -23,7 +24,7 @@ body{
 .container h1{
     font-size: 2.5em;
     color: #4f868c;
-    margin-top: 40px;
+    padding: 20px;
 }
 
 .container form{
@@ -103,3 +104,14 @@ form #btn{
     color: #fff;
 }
 
+@media (max-width:504px) {
+    .container h1{
+        font-size: 2rem;
+    }
+    .container form{
+        padding: 15px;
+    }
+    .input{
+        width: 60%;
+    }
+}
